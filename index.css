@@ -632,25 +632,44 @@ body:not(.user-is-tabbing) a:focus {
 .cyber__projects, .cyber__certs {
     flex: 1 1 350px;
     background: #23232a;
-    padding: var(--gutter-normal);
+    padding: var(--gutter-small) var(--gutter-normal);
     border-radius: 1.5rem;
     margin-bottom: var(--gutter-normal);
     box-shadow: 0 2px 16px 0 rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 260px;
+    max-width: 350px;
 }
 
 .cyber__projects h3, .cyber__certs h3 {
     color: var(--pink);
-    margin-bottom: var(--gutter-small);
+    margin-bottom: 0.5rem;
+    font-size: var(--font-size-medium);
+}
+
+.cyber__certs p {
+    margin-bottom: 1rem;
+    color: var(--white-1);
+    font-size: 1.7rem;
 }
 
 .cyber__certs ul {
-    margin-bottom: var(--gutter-small);
+    margin-bottom: 1rem;
     padding-left: 1.5rem;
 }
 
 .cyber__certs li {
     margin-bottom: 0.5rem;
     list-style-type: disc;
+}
+
+.cyber__certs .btn {
+    margin-top: 0.5rem;
+    font-size: 1.6rem;
+    padding: 0.7rem 2.2rem;
+    align-self: flex-start;
 }
 
 @media(max-width: 900px) {
