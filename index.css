@@ -611,3 +611,51 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+/* --------------------------------------- */
+/* ----- Cybersecurity Portfolio ----- */
+/* --------------------------------------- */
+
+.cyber {
+    background: #18181b;
+    padding: var(--gutter-huge) 0;
+    border-bottom: var(--border-light);
+}
+
+.cyber__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter-huge);
+    justify-content: space-between;
+}
+
+.cyber__projects, .cyber__certs {
+    flex: 1 1 350px;
+    background: #23232a;
+    padding: var(--gutter-normal);
+    border-radius: 1.5rem;
+    margin-bottom: var(--gutter-normal);
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.15);
+}
+
+.cyber__projects h3, .cyber__certs h3 {
+    color: var(--pink);
+    margin-bottom: var(--gutter-small);
+}
+
+.cyber__certs ul {
+    margin-bottom: var(--gutter-small);
+    padding-left: 1.5rem;
+}
+
+.cyber__certs li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+}
+
+@media(max-width: 900px) {
+    .cyber__content {
+        flex-direction: column;
+        gap: var(--gutter-normal);
+    }
+}
