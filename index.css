@@ -665,17 +665,36 @@ body:not(.user-is-tabbing) a:focus {
     list-style-type: disc;
 }
 
+.cyber__certs {
+    position: relative;
+    padding-bottom: 5.5rem; /* Add space for the button */
+}
+
 .cyber__certs .btn {
-    margin-top: 0.5rem;
-    font-size: 1.6rem;
-    padding: 0.7rem 2.2rem;
-    align-self: flex-start;
+    margin-top: 0;
+    position: absolute;
+    left: 2rem;
+    right: 2rem;
+    bottom: 1.5rem;
+    width: calc(100% - 4rem);
+    align-self: stretch;
 }
 
 @media(max-width: 900px) {
     .cyber__content {
         flex-direction: column;
         gap: var(--gutter-normal);
+    }
+
+    .cyber__certs {
+        position: static;
+        padding-bottom: var(--gutter-normal);
+    }
+
+    .cyber__certs .btn {
+        position: static;
+        width: 100%;
+        margin-top: 1rem;
     }
 }
 
